@@ -18,10 +18,17 @@ jQuery.noConflict();
     		var bffr = 0, bffr1 = "";
 	    	$('#calc_form input').click(function(){
 	    		bffr = $(this).val();
-	    		console.log(bffr);
-	    		bffr1 = $('input[name="input_field"]').val();
-	    		bffr = bffr1 + bffr;
-	    		$('input[name="input_field"]').val(bffr);
+	    		//console.log(bffr);
+	    		if(bffr == '='){
+	    			bffr1 = bffr.match(['^0-9']);
+	    			console.log(bffr1);
+	    		}
+	    		else{
+		    		bffr1 = $('input[name="input_field"]').val();
+		    		bffr = bffr1 + bffr;
+		    		$('input[name="input_field"]').val(bffr);
+	    		}
+
 
 	    	});
     	});
