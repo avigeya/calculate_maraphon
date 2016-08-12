@@ -9,5 +9,7 @@
 </head>
 <body>
 	<a href="calcjs.php">Calculate JS</a>
+	<a href="firstlesson.php">Maraphon, days 1-2</a>
+
 </body>
 </html>
